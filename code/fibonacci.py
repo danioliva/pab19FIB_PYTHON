@@ -9,7 +9,9 @@ class Fibonacci():
         conejos_maduros = 0
         conejos_jovenes = 1
         result = 0
-        if numero_meses == 1 or numero_meses == 2:
+        if numero_meses == 0 or numero_meses < 0:
+            raise Exception("The value is zero or negative")
+        elif numero_meses == 1 or numero_meses == 2:
             result = 1
         else:
             for generacion in range(1, numero_meses):

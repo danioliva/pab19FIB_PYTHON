@@ -7,6 +7,7 @@ class test_fibonacci(unittest.TestCase):
     def setUp(self):
         self.fibonacci = Fibonacci()
 
+
     def test_should_fibonacci_number_of_months_1_and_pairs_produced_3_return_1(self):
         self.assertEqual(1, self.fibonacci.compute(1,3))
 
